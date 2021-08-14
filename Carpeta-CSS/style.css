@@ -43,6 +43,10 @@ nav ul li:hover {
     padding-top: 70px;
 }
 
+.padding-cartas {
+    padding-top: 50px;
+}
+
 /*Menu Logo*/
 
 header div {
@@ -105,7 +109,7 @@ li a{
     font-size: 16px;
 }
 
-body{
+.body{
     text-align: center;
 }
 
