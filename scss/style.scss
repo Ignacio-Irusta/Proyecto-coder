@@ -16,6 +16,17 @@ header {
     padding: 10px 0;
 }
 
+.header-index {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
 nav {
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -35,7 +46,7 @@ nav {
                 padding: .5em 1em;
             }
         }
-            li:hover {
+        li:hover {
                 background: blueviolet;
             }
 
@@ -54,46 +65,40 @@ nav {
 
 /*Articulos Comentarios mas imagen con trasformacion*/
 
+.color-section {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width-100 {
+    width: 100%;
+}
+
 .imagen-comentario {
     padding: 10px; 
     margin: 10px; 
     font-size: 16px;
-    width: 600px;
-    float: right;
-    display: block;
-    z-index: auto;
+    width: 45%;
     -webkit-transition: 1s linear;
     transition: 1s linear;
 
     img {
-        width: 100%;
+        width: 600px;
         height: auto;
     }
 
-    .imagen-comentario:hover {
-        -webkit-transform: scale(.5);
-        transform: scale(.5);
-    }
-
 }
 
-/*.imagen-comentario img {
-    width: 100%;
-    height: auto;
-}*/
-
-.comentarios {
-    text-align: left;
-    float: left;
-    display: block;
-    width: 600px;
-    padding: 60px;
-}
-
-/*.imagen-comentario:hover {
+.imagen-comentario:hover {
     -webkit-transform: scale(.5);
     transform: scale(.5);
-}*/
+}
+
+.comentarios {
+    width: 45%;
+    padding: 60px;
+}
 
 /*detalles en general*/
 
@@ -104,19 +109,18 @@ h1 {
     color: blueviolet;
 }
 
- section, article {
-    border: 1px solid black;
+article {
     background-color: khaki;
 }
 
 li {
     list-style-type: none;
-}
 
-li a{
-    text-decoration: none;
-    height: 30px;
-    font-size: 16px;
+    a{
+        text-decoration: none;
+        height: 30px;
+        font-size: 16px;
+    }
 }
 
 .body{
@@ -147,13 +151,16 @@ li a{
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
+
+    img {
+        padding: 10px;
+    }
+
 }
 
-
-.imagenes-carta img {
-    padding: 10px;
+.border-cartas {
+    border: 1px solid black;
 }
-
 /**/
 
 .subtitulo-padding {
@@ -162,25 +169,21 @@ li a{
 
 /*Imagenes Nosotros*/
 
-.nosotros-espacio-imagen img {
-    padding: 30px;
-}
-
 .nosotros-espacio-imagen {
     background-color: #ffffff;
-}
 
-/*Flexbox*/
-
-body{
-    min-height: 100vh; 
-    flex-direction: column;
-    flex-wrap: wrap;
+    img {
+        padding: 30px;
+    }
 }
 
 /*Grid*/
 
 body {
+    min-height: 100vh; 
+    flex-direction: column;
+    flex-wrap: wrap;
+
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "header header header"
