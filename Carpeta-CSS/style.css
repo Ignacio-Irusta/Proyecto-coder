@@ -13,56 +13,27 @@ header {
   align-items: center;
   padding: 10px 0; }
 
-/*nav {
-    font-family: sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-
-        li:hover {
-            background: blueviolet;
-
-            a {
-                color: white;
-                text-decoration: none;
-                padding: .5em 1em;
-            }
-        }
-    }
-}*/
 nav {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-
-nav li a {
-  color: white;
-  text-decoration: none;
-  padding: .5em 1em; }
-
-nav ul li:hover {
-  background: blueviolet; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: .5em 1em; }
+    nav ul li:hover {
+      background: blueviolet; }
 
 .padding {
   padding-top: 70px; }
 
 .padding-cartas {
   padding-top: 50px; }
-
-/*Menu Logo*/
-header div {
-  float: left; }
 
 /*Articulos Comentarios mas imagen con trasformacion*/
 .imagen-comentario {
@@ -75,11 +46,17 @@ header div {
   z-index: auto;
   -webkit-transition: 1s linear;
   transition: 1s linear; }
+  .imagen-comentario img {
+    width: 100%;
+    height: auto; }
+  .imagen-comentario .imagen-comentario:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
 
-.imagen-comentario img {
-  width: 100%;
-  height: auto; }
-
+/*.imagen-comentario img {
+    width: 100%;
+    height: auto;
+}*/
 .comentarios {
   text-align: left;
   float: left;
@@ -87,10 +64,10 @@ header div {
   width: 600px;
   padding: 60px; }
 
-.imagen-comentario:hover {
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5); }
-
+/*.imagen-comentario:hover {
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}*/
 /*detalles en general*/
 h1 {
   font-size: 80px;

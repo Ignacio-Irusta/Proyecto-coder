@@ -16,7 +16,7 @@ header {
     padding: 10px 0;
 }
 
-/*nav {
+nav {
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -27,8 +27,7 @@ header {
         flex-wrap: wrap;
         align-items: center;
 
-        li:hover {
-            background: blueviolet;
+        li {
 
             a {
                 color: white;
@@ -36,31 +35,14 @@ header {
                 padding: .5em 1em;
             }
         }
+            li:hover {
+                background: blueviolet;
+            }
+
     }
-}*/
 
-nav {
-    font-family: sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-nav li a {
-    color: white;
-    text-decoration: none;
-    padding: .5em 1em;
-}
-
-nav ul li:hover {
-    background: blueviolet;
-}
 
 .padding {
     padding-top: 70px;
@@ -70,30 +52,35 @@ nav ul li:hover {
     padding-top: 50px;
 }
 
-/*Menu Logo*/
-
-header div {
-    float: left;
-}
-
 /*Articulos Comentarios mas imagen con trasformacion*/
 
 .imagen-comentario {
     padding: 10px; 
     margin: 10px; 
-     font-size: 16px;
+    font-size: 16px;
     width: 600px;
     float: right;
     display: block;
     z-index: auto;
     -webkit-transition: 1s linear;
     transition: 1s linear;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-comentario:hover {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+    }
+
 }
 
-.imagen-comentario img {
+/*.imagen-comentario img {
     width: 100%;
     height: auto;
-}
+}*/
 
 .comentarios {
     text-align: left;
@@ -103,10 +90,10 @@ header div {
     padding: 60px;
 }
 
-.imagen-comentario:hover {
+/*.imagen-comentario:hover {
     -webkit-transform: scale(.5);
     transform: scale(.5);
-}
+}*/
 
 /*detalles en general*/
 
