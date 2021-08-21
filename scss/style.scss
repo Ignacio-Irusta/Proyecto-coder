@@ -1,0 +1,263 @@
+/*Menu*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/*nav {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        li:hover {
+            background: blueviolet;
+
+            a {
+                color: white;
+                text-decoration: none;
+                padding: .5em 1em;
+            }
+        }
+    }
+}*/
+
+nav {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+nav ul li:hover {
+    background: blueviolet;
+}
+
+.padding {
+    padding-top: 70px;
+}
+
+.padding-cartas {
+    padding-top: 50px;
+}
+
+/*Menu Logo*/
+
+header div {
+    float: left;
+}
+
+/*Articulos Comentarios mas imagen con trasformacion*/
+
+.imagen-comentario {
+    padding: 10px; 
+    margin: 10px; 
+     font-size: 16px;
+    width: 600px;
+    float: right;
+    display: block;
+    z-index: auto;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.imagen-comentario img {
+    width: 100%;
+    height: auto;
+}
+
+.comentarios {
+    text-align: left;
+    float: left;
+    display: block;
+    width: 600px;
+    padding: 60px;
+}
+
+.imagen-comentario:hover {
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+
+/*detalles en general*/
+
+h1 {
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+ section, article {
+    border: 1px solid black;
+    background-color: khaki;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    height: 30px;
+    font-size: 16px;
+}
+
+.body{
+    text-align: center;
+}
+
+.imagen {
+    background-image: url(https://virtualbackgrounds.site/wp-content/uploads/2020/07/coffee-shop.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Imagenes index*/
+
+.imagenes-articulo {
+    clear: both;
+    padding: 80px;
+    position: relative;
+    background: linear-gradient(217deg, khaki(255,0,0,.8), rgba(255,0,0,0) 70.71%)
+}
+
+/*Imagenes carta*/
+
+.imagenes-carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.imagenes-carta img {
+    padding: 10px;
+}
+
+/**/
+
+.subtitulo-padding {
+    padding: 30px;
+}
+
+/*Imagenes Nosotros*/
+
+.nosotros-espacio-imagen img {
+    padding: 30px;
+}
+
+.nosotros-espacio-imagen {
+    background-color: #ffffff;
+}
+
+/*Flexbox*/
+
+body{
+    min-height: 100vh; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*Grid*/
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer"
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid-main {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+}
+   
+.item-a {
+    grid-row: 1 / 3;
+}
+   
+.item-b {
+    grid-column: 3 / 5;
+}
+   
+.item-c {
+    grid-row: 2 / 3;
+}
+
+.item-d {
+    grid-column: 2 / 3;
+}
+/*Footer*/
+
+.footer img {
+    float: right;
+    padding: 10px;
+}
+
+footer {
+    padding: 100px;
+    color: white;
+    background-color: black;
+    text-align: left;
+    font-size: 16px;
+}
+
+/*ID*/
+#espacio {
+    padding: 40px;
+}
+
+#color-inicio {
+    background-color: khaki;
+}
