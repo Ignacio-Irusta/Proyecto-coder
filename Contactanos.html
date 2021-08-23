@@ -12,7 +12,7 @@
 <body class="body">
     <header>
             <div>
-                <img src="./imagenes carta/Piratas_Big_Mom_1.webp" width="48" height="48" alt="logo">
+                <img src="./imagenes carta/Logo-Index.png" width="48" height="48" alt="logo">
             </div>
             <nav>
                 <ul>
@@ -37,41 +37,58 @@
     <main class="padding" id="espacio">
         <h1 id="espacio">Contactanos</h1>
         <p>Rapidamente podes contactarnos llenando el simple y rapido formularo a continuacion, cualquier duda o reclamo podes hacerlo en el siguiente.(Lo contactaremos dentro de las 24hs luego del envio)</p>
-        <form>
-            <fieldset id="espacio">
-                <legend id="espacio">Formulario de Contacto</legend>
-                    <div class="form-group">
-                        <label for="uname">Name:</label>
-                        <input type="text" class="form-control" id="uname" placeholder="ingrese su nombre" name="uname" required>
-                        <div class="valid-feedback">Obligatorio.</div>
-                        <div class="invalid-feedback"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                    <br>
-                    <div class="form-group">
-                        <label for="pwd">Email:</label>
-                        <input type="email" class="form-control" id="pwd" placeholder="ingrese email" name="pswd" required>
-                        <div class="valid-feedback">Obligatorio.</div>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label for="telefono">Movil:</label>
-                        <input type="tel" class="form-control" id="email" placeholder="ingrese telefono" name="mail" required>
-                        <div class="valid-feedback">Obligatorio.</div>
-                        <br>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <br>
-                        <input type="text" placeholder="Comente Aqui." name="comentario" required><br><br>
-                        
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox"> Acepto los terminos.
-                        </label>
-                    </div>
-                        <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
+                </div>
+            </div>
+        </div>
         <div id="espacio">
             <img src="./imagenes carta/facebook real.jpg" width="70" height="70" alt="Facebook"></a>
             <img src="./imagenes carta/youtube real.png" width="70" height="70" alt="Youtube"></a>
