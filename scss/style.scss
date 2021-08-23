@@ -60,7 +60,11 @@ nav {
 }
 
 .padding-cartas {
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+.padding-index {
+    padding-top: 65px;
 }
 
 /*Articulos Comentarios mas imagen con trasformacion*/
@@ -236,11 +240,13 @@ footer {
 }
 
 footer {
-    padding: 100px;
+   background-color: black ;
+   color: white;
+
+}
+
+.rgba {
     color: white;
-    background-color: black;
-    text-align: left;
-    font-size: 16px;
 }
 
 /*Contactanos*/

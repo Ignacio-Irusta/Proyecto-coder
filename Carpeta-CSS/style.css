@@ -43,7 +43,10 @@ nav {
   padding-top: 70px; }
 
 .padding-cartas {
-  padding-top: 50px; }
+  padding-top: 40px; }
+
+.padding-index {
+  padding-top: 65px; }
 
 /*Articulos Comentarios mas imagen con trasformacion*/
 .color-section {
@@ -174,11 +177,11 @@ footer {
   padding: 10px; }
 
 footer {
-  padding: 100px;
-  color: white;
   background-color: black;
-  text-align: left;
-  font-size: 16px; }
+  color: white; }
+
+.rgba {
+  color: white; }
 
 /*Contactanos*/
 .header {
