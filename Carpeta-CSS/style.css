@@ -1,10 +1,10 @@
-/*Menu*/
 * {
   padding: 0px;
   margin: 0px; }
 
+/*Menu*/
 header {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -37,18 +37,18 @@ nav {
       text-decoration: none;
       padding: .5em 1em; }
     nav ul li:hover {
-      background: blueviolet; }
+      background: khaki; }
 
 .padding {
   padding-top: 70px; }
 
 .padding-cartas {
-  padding-top: 40px; }
+  padding-top: 67px; }
 
 .padding-index {
   padding-top: 65px; }
 
-/*Articulos Comentarios mas imagen con trasformacion*/
+/*Articulos en index, Comentarios mas imagen con trasformacion*/
 .color-section {
   background-color: white;
   display: flex;
@@ -84,7 +84,7 @@ h1 {
   color: blueviolet; }
 
 article {
-  background-color: khaki; }
+  background-color: black; }
 
 li {
   list-style-type: none; }
@@ -112,7 +112,7 @@ li {
 /*Imagenes carta*/
 .imagenes-carta {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
   justify-items: center; }
@@ -122,15 +122,15 @@ li {
 .border-cartas {
   border: 1px solid black; }
 
-/**/
-.subtitulo-padding {
-  padding: 30px; }
-
 /*Imagenes Nosotros*/
 .nosotros-espacio-imagen {
   background-color: #ffffff; }
   .nosotros-espacio-imagen img {
     padding: 30px; }
+
+/**/
+.subtitulo-padding {
+  padding: 30px; }
 
 /*Grid*/
 body {
@@ -171,19 +171,7 @@ footer {
 .item-d {
   grid-column: 2 / 3; }
 
-/*Footer*/
-.footer img {
-  float: right;
-  padding: 10px; }
-
-footer {
-  background-color: black;
-  color: white; }
-
-.rgba {
-  color: white; }
-
-/*Contactanos*/
+/*Formulario en Contactanos*/
 .header {
   color: #36A0FF;
   font-size: 27px;
@@ -193,9 +181,31 @@ footer {
   font-size: 35px;
   color: #36A0FF; }
 
+/*Footer*/
+footer {
+  background-color: black;
+  color: white; }
+
 /*ID*/
 #espacio {
   padding: 40px; }
 
 #color-inicio {
+  background-color: khaki;
+  margin-bottom: 0rem; }
+
+.espacio-nosotros {
+  margin-bottom: 0.5em; }
+
+/*SASS*/
+.boton, .boton2 {
+  width: 250px; }
+
+article {
   background-color: khaki; }
+
+h2 {
+  font-size: 30px; }
+
+footer {
+  color: white; }

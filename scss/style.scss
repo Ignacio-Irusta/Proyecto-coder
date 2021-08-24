@@ -1,12 +1,18 @@
-/*Menu*/
+@import './SASS.scss';
 
 * {
     padding: 0px;
     margin: 0px;
 }
 
+$width-button: 150px;
+$theme: 'dark-mode';
+$themeFooter: 'original';
+
+/*Menu*/
+
 header {
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.7);
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -47,7 +53,7 @@ nav {
             }
         }
         li:hover {
-                background: blueviolet;
+                background: $Color-Pagina;
             }
 
     }
@@ -60,14 +66,14 @@ nav {
 }
 
 .padding-cartas {
-    padding-top: 40px;
+    padding-top: 67px;
 }
 
 .padding-index {
     padding-top: 65px;
 }
 
-/*Articulos Comentarios mas imagen con trasformacion*/
+/*Articulos en index, Comentarios mas imagen con trasformacion*/
 
 .color-section {
     background-color: white;
@@ -107,14 +113,14 @@ nav {
 /*detalles en general*/
 
 h1 {
-    font-size: 80px;
+    font-size: $Titulos-inicio;
     font-family: sans-serif;
     font-weight: bold;
-    color: blueviolet;
+    color: $Color-Pagina-Secundario;
 }
 
 article {
-    background-color: khaki;
+    background-color: black;
 }
 
 li {
@@ -151,7 +157,7 @@ li {
 
 .imagenes-carta {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
@@ -165,11 +171,6 @@ li {
 .border-cartas {
     border: 1px solid black;
 }
-/**/
-
-.subtitulo-padding {
-    padding: 30px;
-}
 
 /*Imagenes Nosotros*/
 
@@ -179,6 +180,12 @@ li {
     img {
         padding: 30px;
     }
+}
+
+/**/
+
+.subtitulo-padding {
+    padding: 30px;
 }
 
 /*Grid*/
@@ -232,24 +239,8 @@ footer {
 .item-d {
     grid-column: 2 / 3;
 }
-/*Footer*/
 
-.footer img {
-    float: right;
-    padding: 10px;
-}
-
-footer {
-   background-color: black ;
-   color: white;
-
-}
-
-.rgba {
-    color: white;
-}
-
-/*Contactanos*/
+/*Formulario en Contactanos*/
 
 .header {
     color: #36A0FF;
@@ -262,11 +253,68 @@ footer {
     color: #36A0FF;
 }
 
+/*Footer*/
+
+footer {
+    background-color: black ;
+    color: white;
+ 
+ }
+ 
+
 /*ID*/
 #espacio {
     padding: 40px;
 }
 
 #color-inicio {
-    background-color: khaki;
+    background-color: $Color-Pagina;
+    margin-bottom: 0rem;
+}
+
+.espacio-nosotros {
+    margin-bottom: 0.5em;
+}
+
+/*SASS*/
+
+.boton, .boton2 {
+    width: $width-button + 100px;
+}
+
+@if $theme == 'dark-mode' {
+
+    article {
+
+    background-color: $Color-Pagina;
+    }
+
+} @else if $theme == 'white' {
+
+    article {
+        background-color: white;
+    }
+
+} @else {
+    article {
+    background-color: brown;
+    }
+}
+
+
+@if $Titulos-inicio == 80px {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
+@if $themeFooter == 'original' {
+    footer {
+        color: white;
+    }
+} @else if 'prueba' {
+    footer {
+        color: $Color-Pagina-Secundario;
+    }
 }
