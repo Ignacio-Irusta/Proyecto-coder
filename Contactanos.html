@@ -7,14 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./Carpeta-CSS/style.css">
-    <link rel="stylesheet" href="./Styles/mobile.css">
+    <link rel="stylesheet" href="./Carpeta-CSS/mobile.css">
 </head>
 <body class="body">
     <header>
             <div>
                 <img src="./imagenes carta/Logo de la pagina.png" width="48" height="48" alt="logo">
             </div>
-            <nav>
+            <nav class="menu-responsive">
                 <ul>
                      <li>
                          <a href="./index.html">Inicio</a>
@@ -33,6 +33,9 @@
                      </li>
                </ul>
              </nav>
+                <div class="menu-display">
+                    <i class="fas fa-bars menu-hamburger"></i>
+                </div>
      </header>
     <main class="padding" id="espacio">
         <h1 id="espacio">Contactanos</h1>
@@ -46,35 +49,40 @@
                             <fieldset class="Formulario-centrado">
         
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                    <div class="col-md-8">
+                                    <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                    <div class="col-md-8 center-contactanos">
+                                        <i class="fa fa-user bigicon center-contactanos__icono"></i>
                                         <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                    <div class="col-md-8">
+                                    <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                    <div class="col-md-8 center-contactanos">
+                                        <i class="fa fa-user bigicon center-contactanos__icono"></i>
                                         <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
                                     </div>
                                 </div>
         
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                    <div class="col-md-8">
+                                    <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                    <div class="col-md-8 center-contactanos">
+                                        <i class="fa fa-envelope-o bigicon center-contactanos__icono"></i>
                                         <input id="email" name="email" type="text" placeholder="Ingrese su email" class="form-control" required>
                                     </div>
                                 </div>
         
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                    <div class="col-md-8">
+                                    <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                    <div class="col-md-8 center-contactanos">
+                                        <i class="fa fa-phone-square bigicon center-contactanos__icono"></i>
                                         <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
                                     </div>
                                 </div>
         
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                    <div class="col-md-8">
+                                    <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                    <div class="col-md-8 center-contactanos">
+                                        <i class="fa fa-pencil-square-o bigicon center-contactanos__icono"></i>
                                         <textarea class="form-control" id="message" name="message" placeholder="Ingrese su masaje para nosotros aquí. Nos comunicaremos con usted dentro de 1 día hábil.." rows="7"></textarea>
                                     </div>
                                 </div>
@@ -193,6 +201,6 @@
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
- 
+     <script src="https://kit.fontawesome.com/2b610d8a81.js" crossorigin="anonymous"></script> 
 </body>
 </html>

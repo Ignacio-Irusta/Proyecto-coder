@@ -63,6 +63,9 @@ nav {
 
 }
 
+.menu-display {
+    display: none;
+}
 
 .padding {
     padding-top: 70px;
@@ -156,7 +159,7 @@ li {
 }
 
 .Demostracion__grid-main {
-    max-width: 800px;
+    width: 100%;
     padding: 1rem;
     margin: 0 auto;
     display: grid;
@@ -197,6 +200,10 @@ li {
     filter: grayscale(80%)
 }
 
+.img-responsive {
+    width: 70%;
+}
+
 /*Imagenes carta*/
 
 .Menu {
@@ -217,6 +224,11 @@ li {
 
 }
 
+.p-carta{
+    
+    margin-right: auto;
+  }
+
 /*Imagenes Nosotros*/
 
 .Nosotros {
@@ -225,6 +237,10 @@ li {
     img {
         padding: 30px;
     }
+}
+
+.paddin-nosotros {
+    padding: 0px 20px;
 }
 
 /*Formulario Reserva*/
@@ -246,8 +262,19 @@ body {
     min-height: 100vh; 
     flex-direction: column;
     flex-wrap: wrap;
-
     display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer"
+}
+
+.body-index {
+    min-height: 100vh; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    display: block;
     grid-template-columns: auto;
     grid-template-areas: "header header header"
                          "main main main"
@@ -278,6 +305,14 @@ main {
 .bigicon {
     font-size: 35px;
     color: black;
+}
+
+.center-contactanos {
+    display: flex;
+}
+
+.center-contactanos__icono {
+    padding: 0px 15px;
 }
 
 /*Footer*/
