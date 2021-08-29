@@ -1129,7 +1129,7 @@ pre code {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
-    max-width: 100%;
+    max-width: 66.666667%;
   }
   .col-md-9 {
     -webkit-box-flex: 0;
@@ -2676,9 +2676,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-danger {
-  color: #fff;
-  background-color: blueviolet;
-  border-color: blueviolet;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 246, 151);
+  border-color: black;
 }
 
 .btn-danger:hover {

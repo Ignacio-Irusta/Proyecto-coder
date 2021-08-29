@@ -37,16 +37,17 @@
      <main class="padding">
         <h1>Reservas de Mesa</h1>
         <p>Reserve su mesa, muy facil completando el formulario, cualquier consulta, contactenos.</p>
+
+        <article class="formulario-reserva">
         <form>
             <fieldset id="espacio">
                 <legend>Formulario de reservas de Mesa</legend>
                         <label for="apellido">Ingrese Nombre:</label>
-                        <input type="text" name="  Nombre" required><br><br>
+                        <input type="text" name="  Nombre" class="col-md-8" required><br><br>
                         <label for="Fecha">Ingrese Fecha:</label>
-                        <input type="date" name="Fecha" required><br><br>
+                        <input type="date" name="Fecha" class="col-md-8" required><br><br>
                         <label for="Hora">Ingrese la Hora:</label>
-                        <input type="time" name="Hora" required><br><br>
-
+                        <input type="time" name="Hora" class="col-md-8" required><br><br>
                         <label for="Reserva">Confirme si hay menores: </label>
                         <input type="radio" name="Reserva" id="Menores de 5" value="  Menores de 5" required/>
                         <label for="   Menores de 5"> Menores de 5</label>
@@ -80,114 +81,120 @@
                             <input type="submit" class="btn btn-danger" value="Reservar">
             </fieldset>
         </form>
-            <h2 id="espacio">¿Como hago reserva?</h2>
-                <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles.
+    </article>
+        <div class="espacio">
+            <h2 class="espacio__Info">¿Como hago reserva?</h2>
+                <p>
+                  Los pasos a seguir son muy fáciles:
+                  Primero asegúrese de poner su nombre, así cuando llege podremos llevarlo a su mesa, después ingrese la fecha y hora que desea reservar, indiquenos si hay menores
+                  asi podremos colocarles sillas adecuadas. Indíquenos el tipo de mesa que desea reservar y un estimado de la cantidad de personas que se sentaran allí,
+                  luego acepte las condiciones y apreté el botón de "RESERVAR" si se equivoco puede apretar el botón de "BORRAR INFORMACIÓN" y podra comenzar de vuelta, muchas gracias por su atención.
                 </p>
-            <h2 id="espacio">Soporte de reservas</h2>
-                <p>Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            <h2 class="espacio__Info">Soporte de reservas</h2>
+                <p>
+                  Si llegase a tenes dudas o problemas a la hora de reservar una mesa, por favor contacte se con nosotros a través de la sección de "Contactanos" y allí podremos ayudarle más específicamente.
                 </p>
+        </div>
     </main>
     <br>
     <footer class="page-footer font-small indigo">
 
-        <div class="container">
-      
-          <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-      
-            <div class="col-md-2 mb-3">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="./index.html">Inicio</a>
-              </h6>
-            </div>
-      
+      <div class="container">
+    
+           <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+    
+                <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                     <a href="./index.html">Inicio</a>
+                     </h6>
+                </div>
+    
 
-            <div class="col-md-2 mb-3">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="./cartas.html">Cartas</a>
-              </h6>
-            </div>
-      
+                <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                     <a href="./cartas.html">Cartas</a>
+                     </h6>
+                </div>
+    
 
-            <div class="col-md-2 mb-3">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="./Nosotros.html">Acerca de Nosotros</a>
-              </h6>
-            </div>
+                <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                     <a href="./Nosotros.html">Acerca de Nosotros</a>
+                     </h6>
+                </div>
 
-      
+    
 
-            <div class="col-md-2 mb-3">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="./Reserva.html">Reserva</a>
-              </h6>
-            </div>
-      
+                <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                     <a href="./Reserva.html">Reserva</a>
+                     </h6>
+                </div>
+    
 
-            <div class="col-md-2 mb-3">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="./Contactanos.html">Contactanos</a>
-              </h6>
-            </div>
+                <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                     <a href="./Contactanos.html">Contactanos</a>
+                     </h6>
+                </div>
+           </div>
 
-      
-          </div>
+           <hr class="rgba-white-light" style="margin: 0 15%;">
+    
 
-          <hr class="rgba-white-light" style="margin: 0 15%;">
-      
+           <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+    
 
-          <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-      
-
-            <div class="col-md-8 col-12 mt-5">
-              <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                <div class="col-md-8 col-12 mt-5">
+                <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem
                 aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                 explicabo.
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-            </div>
-      
-          </div>
+                </div>
+    
+           </div>
 
-          <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-      
+           <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+    
 
-          <div class="row pb-3">
-      
+           <div class="row pb-3">
+    
 
-            <div class="col-md-12">
-      
-              <div class="mb-5 flex-center">
-      
+                <div class="col-md-12">
+    
+                     <div class="mb-5 flex-center">
+    
 
-                <a class="fb-ic">
-                  <a href="https://www.facebook.com/"><img src="./imagenes carta/Footer-Facebook.jpg" width="48" height="48" alt="Facebook"></a>
-                </a>
+                          <a class="fb-ic">
+                               <a href="https://www.facebook.com/"><img src="./imagenes carta/Footer-Facebook.jpg" width="48" height="48" alt="Facebook"></a>
+                          </a>
 
-                <a class="tw-ic">
-                  <a href="https://twitter.com/home?lang=es"><img src="./imagenes carta/Footer-Twitter.png" width="48" height="48" alt="Twitter"></a>
-                </a>
+                          <a class="tw-ic">
+                          <a href="https://twitter.com/home?lang=es"><img src="./imagenes carta/Footer-Twitter.png" width="48" height="48" alt="Twitter"></a>
+                          </a>
 
-                <a class="gplus-ic">
-                  <a href="https://www.youtube.com/"><img src="./imagenes carta/Footer-Youtube.png" width="48" height="48" alt="Youtube"></a>
-                </a>
+                          <a class="gplus-ic">
+                               <a href="https://www.youtube.com/"><img src="./imagenes carta/Footer-Youtube.png" width="48" height="48" alt="Youtube"></a>
+                          </a>
 
-                <a class="ins-ic">
-                  <a><img src="./imagenes carta/Footer-Like.jpg" width="48" height="48" alt="Like"></a>
-                </a>
-      
-              </div>
-      
-            </div>
-      
-          </div>
-      
-        </div>
-      
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://plataforma.coderhouse.com/cursos"> CoderHouse.com</a>
-        </div>
-      
-      </footer>
+                          <a class="ins-ic">
+                               <a><img src="./imagenes carta/Footer-Like.jpg" width="48" height="48" alt="Like"></a>
+                          </a>
+    
+                     </div>
+    
+                </div>
+    
+           </div>
+    
+      </div>
+    
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://plataforma.coderhouse.com/cursos"> CoderHouse.com</a>
+      </div>
+    
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
