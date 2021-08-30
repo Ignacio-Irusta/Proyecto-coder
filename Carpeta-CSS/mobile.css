@@ -1,15 +1,16 @@
 @media only screen and (max-width: 768px) {
-  .menu-responsive {
-    display: none;
-}
 
-  .menu-display {
-  display: flex;
-}
-  .menu-hamburger {
-    color: #bdbdbd;
-    font-size: 45px;
-    padding: 0px 40px 0px 0px;
+  .header-index {
+    padding: 5px 0px;
+  }
+
+  .header-cartas {
+    padding: 6px 0px;
+  }
+
+  .Menu__imagenes-carta {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .img-responsive {
@@ -33,5 +34,8 @@
   }
   h1 {
     font-size: 55px;
+  }
+  .Menu__imagenes-carta{
+    margin-left: auto;
   }
 }
