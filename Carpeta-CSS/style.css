@@ -54,6 +54,9 @@ nav {
 .padding-index {
   padding-top: 65px; }
 
+.logo {
+  margin-left: 15px; }
+
 /*Articulos en index, Comentarios mas imagen con trasformacion*/
 .Section {
   background-color: white;
@@ -82,7 +85,7 @@ nav {
 
 /*detalles en general*/
 h1 {
-  font-size: 80px;
+  font-size: 50px;
   font-family: sans-serif;
   font-weight: bold;
   color: black; }
@@ -163,7 +166,8 @@ li {
   align-items: center;
   justify-items: center;
   margin-left: 350px;
-  margin-right: 300px; }
+  margin-right: 300px;
+  margin-bottom: 50px; }
   .Menu__imagenes-carta img {
     padding: 10px; }
 
@@ -179,6 +183,12 @@ li {
 .paddin-nosotros {
   padding: 0px 20px; }
 
+.subtitulo-nosotros {
+  margin-top: 30px; }
+
+.separacion-nosotros {
+  margin-bottom: 30px; }
+
 /*Formulario Reserva*/
 .formulario-reserva {
   width: 66%;
@@ -187,6 +197,9 @@ li {
 /**/
 .subtitulo-padding {
   padding: 30px; }
+
+.p-inicio {
+  font-size: 30px; }
 
 /*Grid*/
 body {

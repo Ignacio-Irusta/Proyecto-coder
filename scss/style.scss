@@ -79,6 +79,10 @@ nav {
     padding-top: 65px;
 }
 
+.logo {
+    margin-left: 15px;
+}
+
 /*Articulos en index, Comentarios mas imagen con trasformacion*/
 
 .Section {
@@ -220,6 +224,7 @@ li {
     justify-items: center;
     margin-left: 350px;
     margin-right: 300px;
+    margin-bottom: 50px;
 
     img {
         padding: 10px;
@@ -246,6 +251,14 @@ li {
     padding: 0px 20px;
 }
 
+.subtitulo-nosotros {
+    margin-top: 30px;
+}
+
+.separacion-nosotros {
+    margin-bottom: 30px;
+}
+
 /*Formulario Reserva*/
 
 .formulario-reserva {
@@ -257,6 +270,10 @@ li {
 
 .subtitulo-padding {
     padding: 30px;
+}
+
+.p-inicio {
+    font-size: 30px;
 }
 
 /*Grid*/
@@ -376,7 +393,7 @@ footer {
 }
 
 
-@if $Titulos-inicio == 80px {
+@if $Titulos-inicio == 50px {
     h2 {
         font-size: 30px;
     }
