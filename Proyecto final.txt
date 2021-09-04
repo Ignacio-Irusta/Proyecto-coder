@@ -1,0 +1,8 @@
+Este sitio es un proytecto del curso de coderHouse realizado para una cafeteria de buenos aires,
+el sitio consta de un Inicio donde te muestra la cafeteria junto con unas reseñas de clientes y 
+una breve seleccion de imagenes para que veas el Mmenu de la casa. Consta de otras 4 paginas donde
+la segunda que es "Cartas" contiene todo el menu separado en categorias, la tercera "Nosotros"
+mostramos un poco acerca del local con unas imagenes, mas una breve historia y su ubicacion,
+la cuarta es un formulario para hacer reservas con varias opciones y una ayuda como usarlo por si acaso
+y la ultima seccion es "Contactanos" otro formulario para contactarse con la cafeteria en caso de alguna duda
+o pregunta mas directa. Tiene responsive, un menu desplegable y un footer bonito.

@@ -27,7 +27,8 @@ header {
 nav {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%; }
   nav ul {
     list-style: none;
     display: flex;
@@ -46,16 +47,17 @@ nav {
   display: none; }
 
 .padding {
-  padding-top: 70px; }
+  padding-top: 82px; }
 
 .padding-cartas {
-  padding-top: 67px; }
+  padding-top: 82px; }
 
 .padding-index {
-  padding-top: 65px; }
+  padding-top: 82px; }
 
 .logo {
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-right: 15px; }
 
 /*Articulos en index, Comentarios mas imagen con trasformacion*/
 .Section {
@@ -111,6 +113,43 @@ li {
   background-position: center; }
 
 /*Imagenes index*/
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .Demostracion {
   clear: both;
   padding: 80px;
