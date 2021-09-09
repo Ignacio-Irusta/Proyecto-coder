@@ -64,6 +64,17 @@ nav {
 
 }
 
+.bg-light {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse {
+    display: none;
+    justify-content: flex-end;
+}
+
 .menu-display {
     display: none;
 }
